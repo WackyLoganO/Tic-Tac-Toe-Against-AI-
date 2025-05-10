@@ -1,5 +1,7 @@
 import os
 os.system('cls')
+import colorama
+from colorama import Fore, Back, Style
 
 def Game_Loop():
 
@@ -399,16 +401,10 @@ def Game_Loop():
                                             AI_Win_Check(Input1, Input2, Input3, Input4, Input5, Input6, Input7, Input8, Input9)
                                             OInput = input("New Input: ")
                                         else:
-                                            if OInput == " ":
-                                                os.system('cls')
-                                                print("Here Is Your Board:" "\n")
-                                                print("\x1B[4m" + f"{Input1}|{Input2}|{Input3}" "\n" f"{Input4}|{Input5}|{Input6}" "\n" + "\x1B[0m" + f"{Input7}|{Input8}|{Input9}" "\n")
-                                                OInput = input("New Input: ")
-                                            else:
-                                                if OInput == "":
-                                                    os.system('cls')
-                                                    print("Here Is Your Board:" "\n")
-                                                    print("\x1B[4m" + f"{Input1}|{Input2}|{Input3}" "\n" f"{Input4}|{Input5}|{Input6}" "\n" + "\x1B[0m" + f"{Input7}|{Input8}|{Input9}" "\n")
-                                                    OInput = input("New Input: ")
+                                            os.system('cls')
+                                            print(Fore.RED + "Error: " + Fore.RESET + "Spot Taken/Enter A Number")
+                                            print("Here Is Your Board:" "\n")
+                                            print("\x1B[4m" + f"{Input1}|{Input2}|{Input3}" "\n" f"{Input4}|{Input5}|{Input6}" "\n" + "\x1B[0m" + f"{Input7}|{Input8}|{Input9}" "\n")
+                                            OInput = input("New Input: ")
                                         
 Game_Loop()
