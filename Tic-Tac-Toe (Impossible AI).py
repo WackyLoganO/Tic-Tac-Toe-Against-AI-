@@ -21,7 +21,51 @@ def Game_Loop():
     OInput = input("Type whatever number on the board you want to put an O and then the AI will immediately respond: ")
 
     def AI(Input1, Input2, Input3, Input4, Input5, Input6, Input7, Input8, Input9, Input0):
-
+        
+        if Input1 == "X" and Input2 == "X" and Input3 == "3":
+            return "X", 3
+        if Input4 == "X" and Input5 == "X" and Input6 == "6":
+            return "X", 6
+        if Input7 == "X" and Input8 == "X" and Input9 == "9":
+            return "X", 9
+        if Input1 == "X" and Input4 == "X" and Input7 == "7":
+            return "X", 7
+        if Input2 == "X" and Input5 == "X" and Input8 == "8":
+            return "X", 8
+        if Input3 == "X" and Input6 == "X" and Input9 == "9":
+            return "X", 9
+        if Input1 == "X" and Input5 == "X" and Input9 == "9":
+            return "X", 9
+        if Input9 == "X" and Input5 == "X" and Input1 == "1":
+            return "X", 1
+        if Input3 == "X" and Input5 == "X" and Input7 == "7":
+            return "X", 7
+        if Input3 == "X" and Input7 == "X" and Input5 == "5":
+            return "X", 5
+        if Input1 == "X" and Input9 == "X" and Input5 == "5":
+            return "X", 5
+        if Input1 == "X" and Input3 == "X" and Input2 == "2":
+            return "X", 2
+        if Input4 == "X" and Input6 == "X" and Input5 == "5":
+            return "X", 5
+        if Input7 == "X" and Input9 == "X" and Input8 == "8":
+            return "X", 8
+        if Input1 == "X" and Input7 == "X" and Input4 == "4":
+            return "X", 4
+        if Input2 == "X" and Input8 == "X" and Input5 == "5":
+            return "X", 5
+        if Input3 == "X" and Input9 == "X" and Input6 == "6":
+            return "X", 6
+        if Input5 == "X" and Input2 == "X" and Input3 == "3" and Input7 == "7" and Input8 == "8":
+            return "X", 3
+        if Input1 == "X" and Input9 == "X" and Input7 == "7":
+            return "X", 7
+        if Input1 == "X" and Input9 == "X" and Input3 == "3":
+            return "X", 3
+        if Input3 == "X" and Input7 == "X" and Input1 == "1":
+            return "X", 1
+        if Input3 == "X" and Input7 == "X" and Input9 == "9":
+            return "X", 9
         if Input5 == "5":
             return "X", 5
         if Input1 == "O" and Input2 == "O" and Input3 == "3":
@@ -92,50 +136,6 @@ def Game_Loop():
             return "X", 3
         if Input5 == "O" and Input9 == "O" and Input3 == "3":
             return "X", 3
-        if Input1 == "X" and Input2 == "X" and Input3 == "3":
-            return "X", 3
-        if Input4 == "X" and Input5 == "X" and Input6 == "6":
-            return "X", 6
-        if Input7 == "X" and Input8 == "X" and Input9 == "9":
-            return "X", 9
-        if Input1 == "X" and Input4 == "X" and Input7 == "7":
-            return "X", 7
-        if Input2 == "X" and Input5 == "X" and Input8 == "8":
-            return "X", 8
-        if Input3 == "X" and Input6 == "X" and Input9 == "9":
-            return "X", 9
-        if Input1 == "X" and Input5 == "X" and Input9 == "9":
-            return "X", 9
-        if Input9 == "X" and Input5 == "X" and Input1 == "1":
-            return "X", 1
-        if Input3 == "X" and Input5 == "X" and Input7 == "7":
-            return "X", 7
-        if Input3 == "X" and Input7 == "X" and Input5 == "5":
-            return "X", 5
-        if Input1 == "X" and Input9 == "X" and Input5 == "5":
-            return "X", 5
-        if Input1 == "X" and Input3 == "X" and Input2 == "2":
-            return "X", 2
-        if Input4 == "X" and Input6 == "X" and Input5 == "5":
-            return "X", 5
-        if Input7 == "X" and Input9 == "X" and Input8 == "8":
-            return "X", 8
-        if Input1 == "X" and Input7 == "X" and Input4 == "4":
-            return "X", 4
-        if Input2 == "X" and Input8 == "X" and Input5 == "5":
-            return "X", 5
-        if Input3 == "X" and Input9 == "X" and Input6 == "6":
-            return "X", 6
-        if Input5 == "X" and Input2 == "X" and Input3 == "3" and Input7 == "7" and Input8 == "8":
-            return "X", 3
-        if Input1 == "X" and Input9 == "X" and Input7 == "7":
-            return "X", 7
-        if Input1 == "X" and Input9 == "X" and Input3 == "3":
-            return "X", 3
-        if Input3 == "X" and Input7 == "X" and Input1 == "1":
-            return "X", 1
-        if Input3 == "X" and Input7 == "X" and Input9 == "9":
-            return "X", 9
         if all(pos in ["O", "X"] for pos in [Input1, Input2, Input3, Input4, Input5, Input6, Input7, Input8, Input9]):
             return "X", 0
         else:
